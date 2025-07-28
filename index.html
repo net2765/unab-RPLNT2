@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Portal UNAB - Notas Ciclo 01/2025</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #f1f1f1;
+    color: #666;
+  }
+  header {
+    background-color: #10b94a; /* green header */
+    padding: 0.7rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+  .menu-icon {
+    width: 28px;
+    height: 18px;
+    cursor: pointer;
+    position: relative;
+  }
+  .menu-icon .bar {
+    height: 3px;
+    background-color: #7a7a7a;
+    margin: 4px 0;
+    border-radius: 1px;
+  }
+  .logout-btn {
+    background-color: #79d6ff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 0.3rem 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    user-select: none;
+  }
+  main {
+    max-width: 600px;
+    margin: 1rem auto 4rem;
+    padding: 0 0.75rem;
+  }
+  h1 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #777;
+  }
+  h1 svg {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    fill: #888;
+  }
+  .info-bar {
+    background-color: #56b4d3;
+    color: #222;
+    padding: 0.4rem 0.9rem;
+    margin: 0.5rem 0 1.5rem 0;
+    border-radius: 0.2rem;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+    background: white;
+  }
+  details {
+    cursor: pointer;
+  }
+  summary {
+    font-weight: 400;
+    font-size: 1.2rem;
+    background: white;
+    padding: 0.7rem 1rem;
+    border-bottom: 1px solid #ddd;
+    user-select: none;
+  }
+  summary::-webkit-details-marker {
+    display:none;
+  }
+  summary::before {
+    content: "›";
+    display: inline-block;
+    color: #666;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+    margin-right: 0.4rem;
+  }
+  details[open] summary::before {
+    transform: rotate(90deg);
+    color: #888;
+  }
+  th, td {
+    padding: 0.45rem 0.6rem;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-weight: 300;
+  }
+  th:first-child, td:first-child {
+    text-align: left;
+    font-weight: 600;
+  }
+  th {
+    background-color: #f7f7f7;
+    font-size: 0.95rem;
+    color: #444;
+  }
+  .grade {
+    border-radius: 5px;
+    padding: 0.15rem 0.5rem;
+    font-weight: 700;
+    color: white;
+    display: inline-block;
+    min-width: 2.2em;
+  }
+  .grade.green {
+    background-color: #10b94a;
+  }
+  .grade.orange {
+    background-color: #efa318;
+  }
+  /* For mobile: stack smaller text */
+  @media (max-width: 420px) {
+    body {
+      font-size: 0.9rem;
+    }
+    header {
+      font-size: 1.1rem;
+    }
+    main {
+      margin: 0.7rem auto 3rem;
+      padding: 0 0.5rem;
+    }
+    h1 {
+      font-size: 1.25rem;
+    }
+    th, td {
+      padding: 0.3rem 0.4rem;
+    }
+  }
+  footer {
+    width: 100%;
+    background-color: #6dd2f2;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    padding: 1rem 0;
+    user-select: none;
+    font-size: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="menu-icon" tabindex="0" aria-label="Menú">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <div>Portal UNAB</div>
+    <button class="logout-btn" type="button" aria-label="Salir del portal">Salir</button>
+  </header>
+  <main>
+    <h1 aria-label="Notas Ciclo 01/2025">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 
+      2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14H8v-2h4v2zm3.5-6.5l-3 3-1.5-1.5L8 
+      15h8v-1.5zM6 6h12v2H6V6z"/></svg>
+      Notas Ciclo 01/2025
+    </h1>
+    <p class="info-bar" role="note">
+      <span aria-label="Consejo para el usuario:">Coloca tu teléfono en posición Horizontal</span>
+    </p>
+
+    <details open>
+      <summary> MARIO ISAAC FRANCO ORELLANA </summary>
+      <table role="table" aria-label="Notas del alumno Mario Isaac Franco Orellana">
+        <thead>
+          <tr>
+            <th scope="col">Asignatura</th>
+            <th scope="col">P1</th>
+            <th scope="col">P2</th>
+            <th scope="col">P3</th>
+            <th scope="col">Final</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Administración de Base de Datos</td>
+            <td>7.6</td>
+            <td>8.0</td>
+            <td>8.4</td>
+            <td><span class="grade green" aria-label="Nota final 7.6">7.6</span></td>
+          </tr>
+          <tr>
+            <td>Física I</td>
+            <td>6.0</td>
+            <td>4.5</td>
+            <td>6.0</td>
+            <td><span class="grade green" aria-label="Nota final 6.4">6.4</span></td>
+          </tr>
+          <tr>
+            <td>Matemática III</td>
+            <td>7.0</td>
+            <td>7.0</td>
+            <td>8.0</td>
+            <td><span class="grade green" aria-label="Nota final 7.9">7.9</span></td>
+          </tr>
+          <tr>
+            <td>Liderazgo y Funciones Gerenciales</td>
+            <td>7.6</td>
+            <td>7.0</td>
+            <td>7.4</td>
+            <td><span class="grade green" aria-label="Nota final 7.2">7.2</span></td>
+          </tr>
+          <tr>
+            <td>Programación I</td>
+            <td>8.3</td>
+            <td>8.7</td>
+            <td>8.4</td>
+            <td><span class="grade green" aria-label="Nota final 7.4">7.4</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </details>
+  </main>
+  <footer>2015 - UNAB</footer>
+</body>
+</html>
+
